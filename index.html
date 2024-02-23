@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BD online ticket</title>
+
+    <!-- daisy UI and Tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <header class="container mx-auto">
+      <nav class="flex justify-between items-center p-10">
+        <div>
+          <h1 class="font-bold">FARHANI</h1>
+        </div>
+
+        <div>
+          <ul class="flex gap-10">
+            <li>Home</li>
+            <li>About</li>
+            <li>Destination</li>
+            <li>Search</li>
+          </ul>
+        </div>
+
+        <div>
+          <button class="btn btn-success">Bus</button>
+        </div>
+      </nav>
+
+      <div
+        class="bg-[url(./images/banner.png)] bg-cover bg-center bg-no-repeat h-[500px] mx-auto"
+      >
+        <h1 class="text-6xl text-white font-bold text-center">
+          End-to-End Travel with
+        </h1>
+        <h1 class="text-6xl text-green-700 font-bold text-center">
+          P Paribahan
+        </h1>
+        <p class="text-lg text-white text-center">
+          Yes, you can run unit tests and view the results directly within the
+          app. The integrated testing features allow for a streamlined .
+        </p>
+        <div class="text-center">
+          <button class="btn btn-success">Buy Tickets</button>
+        </div>
+      </div>
+
+      <div class="flex justify-center items-center gap-5">
+        <!-- card 01 -->
+
+        <div class="w-96 flex gap-6 p-10 rounded-3xl shadow-2xl">
+          <div class="">
+            <img src="images/people.png" alt="" />
+          </div>
+
+          <div>
+            <h2 class="card-title text-4xl font-bold">500k+</h2>
+            <p>Registered users</p>
+          </div>
+        </div>
+
+        <!-- card 02 -->
+        <div class="w-96 flex gap-6 p-10 rounded-3xl shadow-2xl">
+          <div class="">
+            <img src="images/ticket-cupon.png" alt="" />
+          </div>
+
+          <div>
+            <h2 class="card-title text-4xl font-bold">1.7 lacs</h2>
+            <p>Tickets sold</p>
+          </div>
+        </div>
+
+        <!-- card 03 -->
+        <div class="w-96 flex gap-6 p-10 rounded-3xl shadow-2xl">
+          <div class="">
+            <img src="images/stoppage.png" alt="" />
+          </div>
+
+          <div>
+            <h2 class="card-title text-4xl font-bold">80k+</h2>
+            <p>Rental partners</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="mb-5">
+      <!-- offer section -->
+      <section class="container mx-auto">
+        <div>
+          <div>
+            <h1 class="text-4xl font-bold text-center my-10">
+              Best offers for you
+            </h1>
+          </div>
+
+          <div class="flex gap-10">
+            <!-- 15% off -->
+            <div
+              class="bg-amber-500 w-1/2 h-40 rounded-3xl flex gap-10 justify-around items-center"
+            >
+              <div>
+                <h1 class="text-2xl font-bold">15% OFF</h1>
+                <h4 class="font-bold">on your next purchase</h4>
+                <p>use by January 2024</p>
+              </div>
+
+              <div>
+                <h1 class="text-xl font-bold">NEW15</h1>
+                <p>Coupon Code</p>
+              </div>
+            </div>
+
+            <!-- 20% off -->
+            <div
+              class="bg-[#F78C9C] w-1/2 rounded-3xl flex gap-10 justify-around items-center"
+            >
+              <div>
+                <h1 class="text-2xl font-bold">20% OFF</h1>
+                <h4 class="font-bold">on your next purchase</h4>
+                <p>use by January 2024</p>
+              </div>
+
+              <div>
+                <h1 class="text-xl font-bold">Couple 20</h1>
+                <p>Coupon Code</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center my-10">
+            <button class="btn btn-outline btn-success">See All Offers</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ticket section -->
+      <section class="bg-gray-200 rounded-3xl mx-5 py-5">
+        <div class="container mx-auto">
+          <div class="text-center">
+            <h1 class="text-2xl font-bold pt-10">P.H Paribahan</h1>
+            <p class="py-5">
+              Yes, you can run unit tests and view the results directly within
+              the app. The integrated testing features allow for a streamlined .
+            </p>
+          </div>
+
+          <div
+            class="bg-white rounded-2xl p-5 flex justify-between items-center"
+          >
+            <div class="w-[70%]">
+              <div class="flex justify-between">
+                <div class="flex gap-5">
+                  <div>
+                    <img src="images/bus-logo.png" alt="" />
+                  </div>
+
+                  <div>
+                    <h1 class="text-2xl font-bold">Greenline Paribahan</h1>
+                    <p>Coach-009-WEB ! AC_Business</p>
+                  </div>
+                </div>
+
+                <div
+                  class="flex gap-2 bg-green-300 rounded-lg justify-center items-center px-5"
+                >
+                  <div><img src="images/seat-green.png" alt="" /></div>
+                  <p class="text-green-500 font-bold">40 Seats left</p>
+                </div>
+              </div>
+
+              <div class="bg-gray-200 rounded-3xl p-5 my-5">
+                <div class="flex justify-between">
+                  <div>
+                    <h1 class="font-bold">Route</h1>
+                  </div>
+                  <div>
+                    <h1 class="font-bold">Dhaka-Sylhet</h1>
+                  </div>
+                </div>
+                <br />
+
+                <div class="flex justify-between">
+                  <div>
+                    <h1 class="font-bold">Departure Time</h1>
+                  </div>
+                  <div>
+                    <h1 class="font-bold">9.00 PM</h1>
+                  </div>
+                </div>
+                <br />
+
+                <div class="flex justify-between">
+                  <div class="bg-gray-300 rounded-xl p-3">
+                    <h1 class="font-bold">Boarding Point - Airport</h1>
+                  </div>
+
+                  <div class="bg-gray-300 rounded-xl p-3">
+                    <h1 class="font-bold">Kodomtoli</h1>
+                  </div>
+
+                  <div class="bg-gray-300 rounded-xl p-3">
+                    <h1 class="font-bold">Est. Time - 11Hours</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-[30%] flex justify-center flex-col items-center">
+              <img src="images/fare.png" alt="" />
+              <h1 class="text-xl font-bold">550 Taka</h1>
+              <p>Per Seat</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5 bg-white mt-10 rounded-3xl p-5">
+            <!-- seat booking section -->
+            <div class="w-[60%] m-10 rounded-2xl">
+              <div>
+                <h1 class="font-bold text-xl p-3">Select Your Seat</h1>
+              </div>
+
+              <div class="flex justify-between m-3 px-3">
+                <div class="flex gap-2">
+                  <div><img src="images/seat-gray.png" alt="" /></div>
+                  <div>
+                    <h1>Available</h1>
+                  </div>
+                </div>
+
+                <div class="flex gap-2">
+                  <div><img src="images/seat-green-filled.png" alt="" /></div>
+                  <div>
+                    <h1>Selected</h1>
+                  </div>
+                </div>
+              </div>
+
+              <!-- seat number -->
+              <div class="flex justify-end">
+                <img src="images/steering (2).png" alt="" class="" />
+              </div>
+
+
+              <div class="grid grid-cols-2 gap-3 mt-5">
+                <div class="grid grid-cols-6">
+                  <div class="flex justify-start px-5 items-center">A</div>
+                  <div class="flex justify-between gap-x-8 ">
+                    <div class="flex justify-center">
+                      <button
+                        id="A1" class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      >
+                        <p>A1</p>
+                      </button>
+                    </div>
+                    <div class="flex justify-center">
+                      <button
+                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        id="A2"
+                      >
+                        <p>A2</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex justify-end space-x-8">
+                  <div class="flex justify-center">
+                    <button
+                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      id="A3"
+                    >
+                      <p>A3</p>
+                    </button>
+                  </div>
+                  <div class="flex justify-center">
+                    <button
+                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      id="A4"
+                    >
+                      <p>A4</p>
+                    </button>
+                  </div>
+
+                </div>
+                <div class="grid grid-cols-6">
+                  <div class="flex justify-start px-5 items-center">B</div>
+                  <div class="flex justify-between gap-x-8 ">
+                    <div class="flex justify-center">
+                      <button
+                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        id="B1"
+                      >
+                        <p>B1</p>
+                      </button>
+                    </div>
+                    <div class="flex justify-center">
+                      <button
+                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        id="B2"
+                      >
+                        <p>B2</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex justify-end space-x-8">
+                  <div class="flex justify-center">
+                    <button
+                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      id="B3"
+                    >
+                      <p>B3</p>
+                    </button>
+                  </div>
+                  <div class="flex justify-center">
+                    <button
+                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      id="B4"
+                    >
+                      <p>B4</p>
+                    </button>
+                  </div>
+
+                </div>
+                <div class="grid grid-cols-6">
+                  <div class="flex justify-start px-5 items-center">C</div>
+                  <div class="flex justify-between gap-x-8 ">
+                    <div class="flex justify-center">
+                      <button
+                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        id="C1"
+                      >
+                        <p>C1</p>
+                      </button>
+                    </div>
+                    <div class="flex justify-center">
+                      <button
+                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        id="C2"
+                      >
+                        <p>C2</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex justify-end space-x-8">
+                  <div class="flex justify-center">
+                    <button
+                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      id="C3"
+                    >
+                      <p>C3</p>
+                    </button>
+                  </div>
+                  <div class="flex justify-center">
+                    <button
+                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      id="C4"
+                    >
+                      <p>C4</p>
+                    </button>
+                  </div>
+                </div>
+                <div class="grid grid-cols-6">
+                  <div class="flex justify-start px-5 items-center">D</div>
+                  <div class="flex justify-between gap-x-8 ">
+                    <div class="flex justify-center">
+                      <button
+                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        id="D1"
+                      >
+                        <p>D1</p>
+                      </button>
+                    </div>
+                    <div class="flex justify-center">
+                      <button
+                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        id="D2"
+                      >
+                        <p>D2</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex justify-end space-x-8">
+                  <div class="flex justify-center">
+                    <button
+                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      id="D3"
+                    >
+                      <p>D3</p>
+                    </button>
+                  </div>
+                  <div class="flex justify-center">
+                    <button
+                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      id="D4"
+                    >
+                      <p>D4</p>
+                    </button>
+                  </div>
+                </div>
+                <div class="grid grid-cols-6">
+                  <div class="flex justify-start px-5 items-center">E</div>
+                  <div class="flex justify-between gap-x-8 ">
+                    <div class="flex justify-center">
+                      <button
+                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        id="E1"
+                      >
+                        <p>E1</p>
+                      </button>
+                    </div>
+                    <div class="flex justify-center">
+                      <button
+                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        id="E2"
+                      >
+                        <p>E2</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex justify-end space-x-8">
+                  <div class="flex justify-center">
+                    <button
+                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      id="E3"
+                    >
+                      <p>E3</p>
+                    </button>
+                  </div>
+                  <div class="flex justify-center">
+                    <button
+                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      id="E4"
+                    >
+                      <p>E4</p>
+                    </button>
+                  </div>
+                </div>
+                <div class="grid grid-cols-6">
+                  <div class="flex justify-start px-5 items-center">F</div>
+                  <div class="flex justify-between gap-x-8 ">
+                    <div class="flex justify-center">
+                      <button
+                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        id="F1"
+                      >
+                        <p>F1</p>
+                      </button>
+                    </div>
+                    <div class="flex justify-center">
+                      <button
+                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        id="F2"
+                      >
+                        <p>F2</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex justify-end space-x-8">
+                  <div class="flex justify-center">
+                    <button
+                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      id="F3"
+                    >
+                      <p>F3</p>
+                    </button>
+                  </div>
+                  <div class="flex justify-center">
+                    <button
+                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      id="F4"
+                    >
+                      <p>F4</p>
+                    </button>
+                  </div>
+                </div>
+                <div class="grid grid-cols-6">
+                  <div class="flex justify-start px-5 items-center">G</div>
+                  <div class="flex justify-between gap-x-8 ">
+                    <div class="flex justify-center">
+                      <button
+                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        id="G1"
+                      >
+                        <p>G1</p>
+                      </button>
+                    </div>
+                    <div class="flex justify-center">
+                      <button
+                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        id="G2"
+                      >
+                        <p>G2</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex justify-end space-x-8">
+                  <div class="flex justify-center">
+                    <button
+                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      id="G3"
+                    >
+                      <p>G3</p>
+                    </button>
+                  </div>
+                  <div class="flex justify-center">
+                    <button
+                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      id="G4"
+                    >
+                      <p>G4</p>
+                    </button>
+                  </div>
+                </div>
+                <div class="grid grid-cols-6">
+                  <div class="flex justify-start px-5 items-center">H</div>
+                  <div class="flex justify-between gap-x-8 ">
+                    <div class="flex justify-center">
+                      <button
+                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        id="H1"
+                      >
+                        <p>H1</p>
+                      </button>
+                    </div>
+                    <div class="flex justify-center">
+                      <button
+                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        id="H2"
+                      >
+                        <p>H2</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex justify-end space-x-8">
+                  <div class="flex justify-center">
+                    <button
+                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      id="H3"
+                    >
+                      <p>H3</p>
+                    </button>
+                  </div>
+                  <div class="flex justify-center">
+                    <button
+                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      id="H4"
+                    >
+                      <p>H4</p>
+                    </button>
+                  </div>
+                </div>
+                <div class="grid grid-cols-6">
+                  <div class="flex justify-start px-5 items-center">I</div>
+                  <div class="flex justify-between gap-x-8 ">
+                    <div class="flex justify-center">
+                      <button
+                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        id="I1"
+                      >
+                        <p>I1</p>
+                      </button>
+                    </div>
+                    <div class="flex justify-center">
+                      <button
+                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        id="I2"
+                      >
+                        <p>I2</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex justify-end space-x-8">
+                  <div class="flex justify-center">
+                    <button
+                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      id="I3"
+                    >
+                      <p>I3</p>
+                    </button>
+                  </div>
+                  <div class="flex justify-center">
+                    <button
+                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      id="I4"
+                    >
+                      <p>I4</p>
+                    </button>
+                  </div>
+                </div>
+                <div class="grid grid-cols-6">
+                  <div class="flex justify-start px-5 items-center">J</div>
+                  <div class="flex justify-between gap-x-8 ">
+                    <div class="flex justify-center">
+                      <button
+                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        id="J1"
+                      >
+                        <p>J1</p>
+                      </button>
+                    </div>
+                    <div class="flex justify-center">
+                      <button
+                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        id="J2"
+                      >
+                        <p>J2</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex justify-end space-x-8">
+                  <div class="flex justify-center">
+                    <button
+                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      id="J3"
+                    >
+                      <p>J3</p>
+                    </button>
+                  </div>
+                  <div class="flex justify-center">
+                    <button
+                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      id="J4"
+                    >
+                      <p>J4</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ticket details -->
+            <div class="p-5 w-[40%]">
+              <div>
+                <h1 class="font-bold text-xl p-3">Select Your Seat</h1>
+              </div>
+
+              <div class="bg-gray-200 rounded-lg container mx-auto p-5">
+                <div class="flex justify-between mx-10">
+                  <div>
+                    <p class="font-bold">
+                      Seat
+                      <span class="bg-green-500 text-white px-3 rounded-lg"
+                        >2</span
+                      >
+                    </p>
+                  </div>
+                  <div>
+                    <p class="font-bold">Class</p>
+                  </div>
+                  <div>
+                    <p class="font-bold">Price</p>
+                  </div>
+                </div>
+                <hr />
+
+                <div class="flex justify-between mx-10">
+                  <div>
+                    <p class="font-bold">C2</p>
+                  </div>
+                  <div>
+                    <p class="font-bold">Economy</p>
+                  </div>
+                  <div>
+                    <p class="font-bold">550</p>
+                  </div>
+                </div>
+                <div class="flex justify-between mx-10">
+                  <div>
+                    <p class="font-bold">C2</p>
+                  </div>
+                  <div>
+                    <p class="font-bold">Economy</p>
+                  </div>
+                  <div>
+                    <p class="font-bold">550</p>
+                  </div>
+                </div>
+                <hr />
+                <div class="flex justify-between mx-10">
+                  <div>
+                    <p class="font-bold">Total Price</p>
+                  </div>
+                  <div>
+                    <p class="font-bold">1100</p>
+                  </div>
+                </div>
+
+                <div class="flex shadow-md bg-white m-5 mb-10 rounded-lg p-2">
+                  <input
+                    type="text"
+                    placeholder="Have any copupon?"
+                    class="flex-1 outline-none pl-3"
+                  />
+                  <button class="btn btn-success">Apply</button>
+                </div>
+
+                <div class="flex justify-between mx-10">
+                  <div>
+                    <p class="font-bold">Grand Total</p>
+                  </div>
+                  <div>
+                    <p class="font-bold">BDT 1100</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <!-- passenger info -->
+                <div>
+                  <label class="form-control w-full">
+                    <div class="label">
+                      <span class="label-text font-bold">Passenger Name*</span>
+                    </div>
+                    <input
+                      type="text"
+                      placeholder="Enter your name"
+                      class="input input-bordered w-full"
+                    />
+                    <div class="label"></div>
+                  </label>
+                </div>
+                <div>
+                  <label class="form-control w-full">
+                    <div class="label">
+                      <span class="label-text font-bold">Phone Number*</span>
+                    </div>
+                    <input
+                      type="text"
+                      placeholder="Enter your phone number"
+                      class="input input-bordered w-full"
+                    />
+                    <div class="label"></div>
+                  </label>
+                </div>
+                <div>
+                  <label class="form-control w-full">
+                    <div class="label">
+                      <span class="label-text font-bold">Email ID</span>
+                    </div>
+                    <input
+                      type="text"
+                      placeholder="Enter your email ID"
+                      class="input input-bordered w-full"
+                    />
+                    <div class="label"></div>
+                  </label>
+                </div>
+                <div><button class="btn btn-success w-full">Next</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./utility.js"></script>
+    <script src="./ticket.js"></script>
+  </body>
+</html>
