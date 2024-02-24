@@ -12,17 +12,23 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      :root {
+        --primary: #1dd100;
+      }
+    </style>
   </head>
 
   <body>
-    <header class="container mx-auto">
-      <nav class="flex justify-between items-center p-10">
+    <header class="container mx-auto max-sm:px-5">
+      <nav class="flex justify-between items-center py-10">
         <div>
           <h1 class="font-bold">FARHANI</h1>
         </div>
 
         <div>
-          <ul class="flex gap-10">
+          <ul class="hidden md:flex gap-10">
             <li>Home</li>
             <li>About</li>
             <li>Destination</li>
@@ -31,63 +37,77 @@
         </div>
 
         <div>
-          <button class="btn btn-success">Bus</button>
+          <button
+            class="btn btn-success bg-[#1DD1001A] border-[#1DD10066] text-[var(--primary)]"
+          >
+            <img src="./images/bus-icon.png" alt="" /> Bus
+          </button>
         </div>
       </nav>
 
       <div
-        class="bg-[url(./images/banner.png)] bg-cover bg-center bg-no-repeat h-[500px] mx-auto"
+        class="bg-[url(./images/banner.png)] bg-cover bg-center bg-no-repeat mx-auto rounded-3xl object-contain h-[550px] flex justify-center items-center gap-5 -z-10 relative w-full"
       >
-        <h1 class="text-6xl text-white font-bold text-center">
-          End-to-End Travel with
-        </h1>
-        <h1 class="text-6xl text-green-700 font-bold text-center">
-          P Paribahan
-        </h1>
-        <p class="text-lg text-white text-center">
-          Yes, you can run unit tests and view the results directly within the
-          app. The integrated testing features allow for a streamlined .
-        </p>
-        <div class="text-center">
-          <button class="btn btn-success">Buy Tickets</button>
+        <div class="w-full max-sm:px-1">
+          <h1 class="text-3xl md:text-6xl text-white font-bold text-center">
+            End-to-End Travel with <br />
+            <span class="text-[var(--primary)]">P Paribahan</span>
+          </h1>
+          <p class="text-lg text-white text-center my-8 font-light">
+            Book Your Bus Tickets Hassle-Free Today. Your Journey Begins Here
+            with Ease and Convenience.
+          </p>
+          <div class="text-center">
+            <button class="btn btn-success bg-[var(--primary)]">
+              Buy Tickets
+            </button>
+          </div>
         </div>
       </div>
 
-      <div class="flex justify-center items-center gap-5">
-        <!-- card 01 -->
+      <div class="flex justify-center -mt-10 z-10 relative max-sm:px-3">
+        <div class="md:flex gap-5 max-sm:w-full">
+          <!-- card 01 -->
 
-        <div class="w-96 flex gap-6 p-10 rounded-3xl shadow-2xl">
-          <div class="">
-            <img src="images/people.png" alt="" />
+          <div
+            class="w-full md:w-96 max-sm:mb-2 flex gap-6 p-10 rounded-3xl shadow-2xl bg-white border-b-4 border-[var(--primary)]"
+          >
+            <div class="">
+              <img src="./images/people.png" alt="" />
+            </div>
+
+            <div>
+              <h2 class="card-title text-4xl font-bold">500k+</h2>
+              <p>Registered users</p>
+            </div>
           </div>
 
-          <div>
-            <h2 class="card-title text-4xl font-bold">500k+</h2>
-            <p>Registered users</p>
-          </div>
-        </div>
+          <!-- card 02 -->
+          <div
+            class="md:w-96 w-full max-sm:mb-2 flex gap-6 p-10 rounded-3xl shadow-2xl bg-white border-b-4 border-[var(--primary)]"
+          >
+            <div class="">
+              <img src="./images/ticket-cupon.png" alt="" />
+            </div>
 
-        <!-- card 02 -->
-        <div class="w-96 flex gap-6 p-10 rounded-3xl shadow-2xl">
-          <div class="">
-            <img src="images/ticket-cupon.png" alt="" />
-          </div>
-
-          <div>
-            <h2 class="card-title text-4xl font-bold">1.7 lacs</h2>
-            <p>Tickets sold</p>
-          </div>
-        </div>
-
-        <!-- card 03 -->
-        <div class="w-96 flex gap-6 p-10 rounded-3xl shadow-2xl">
-          <div class="">
-            <img src="images/stoppage.png" alt="" />
+            <div>
+              <h2 class="card-title text-4xl font-bold">1.7 lacs</h2>
+              <p>Tickets sold</p>
+            </div>
           </div>
 
-          <div>
-            <h2 class="card-title text-4xl font-bold">80k+</h2>
-            <p>Rental partners</p>
+          <!-- card 03 -->
+          <div
+            class="md:w-96 w-full max-sm:mb-2 flex gap-6 p-10 rounded-3xl shadow-2xl bg-white border-b-4 border-[var(--primary)]"
+          >
+            <div class="">
+              <img src="./images/stoppage.png" alt="" />
+            </div>
+
+            <div>
+              <h2 class="card-title text-4xl font-bold">80k+</h2>
+              <p>Rental partners</p>
+            </div>
           </div>
         </div>
       </div>
@@ -95,7 +115,7 @@
 
     <main class="mb-5">
       <!-- offer section -->
-      <section class="container mx-auto">
+      <section class="container mx-auto px-5">
         <div>
           <div>
             <h1 class="text-4xl font-bold text-center my-10">
@@ -103,10 +123,10 @@
             </h1>
           </div>
 
-          <div class="flex gap-10">
+          <div class="md:flex gap-10">
             <!-- 15% off -->
             <div
-              class="bg-amber-500 w-1/2 h-40 rounded-3xl flex gap-10 justify-around items-center"
+              class="bg-amber-500 w-full max-sm:mb-3 md:w-1/2 px-5 py-8 rounded-3xl flex gap-10 justify-around items-center"
             >
               <div>
                 <h1 class="text-2xl font-bold">15% OFF</h1>
@@ -122,7 +142,7 @@
 
             <!-- 20% off -->
             <div
-              class="bg-[#F78C9C] w-1/2 rounded-3xl flex gap-10 justify-around items-center"
+              class="bg-[#F78C9C] w-full md:w-1/2 px-5 py-8 rounded-3xl flex gap-10 justify-around items-center"
             >
               <div>
                 <h1 class="text-2xl font-bold">20% OFF</h1>
@@ -144,24 +164,25 @@
       </section>
 
       <!-- ticket section -->
-      <section class="bg-gray-200 rounded-3xl mx-5 py-5">
+      <section class="bg-gray-200 border-t-4 border-[var(--primary)] rounded-3xl mx-5 py-5">
         <div class="container mx-auto">
           <div class="text-center">
             <h1 class="text-2xl font-bold pt-10">P.H Paribahan</h1>
             <p class="py-5">
-              Yes, you can run unit tests and view the results directly within
-              the app. The integrated testing features allow for a streamlined .
+              Ready to embark on your journey? Don't wait any longer! Secure
+              your seat effortlessly by booking your ticket with us. Experience
+              the ease and convenience of hassle-free booking today.
             </p>
           </div>
 
           <div
-            class="bg-white rounded-2xl p-5 flex justify-between items-center"
+            class="bg-white rounded-2xl p-5 md:flex justify-between items-center"
           >
-            <div class="w-[70%]">
-              <div class="flex justify-between">
+            <div class="md:w-[70%]">
+              <div class="md:flex justify-between">
                 <div class="flex gap-5">
                   <div>
-                    <img src="images/bus-logo.png" alt="" />
+                    <img src="./images/bus-logo.png" alt="" />
                   </div>
 
                   <div>
@@ -173,13 +194,15 @@
                 <div
                   class="flex gap-2 bg-green-300 rounded-lg justify-center items-center px-5"
                 >
-                  <div><img src="images/seat-green.png" alt="" /></div>
-                  <p class="text-green-500 font-bold">40 Seats left</p>
+                  <div><img src="./images/seat-green.png" alt="" /></div>
+                  <p class="text-green-500 font-bold" id="seats_left">
+                    40 Seats left
+                  </p>
                 </div>
               </div>
 
               <div class="bg-gray-200 rounded-3xl p-5 my-5">
-                <div class="flex justify-between">
+                <div class="flex justify-between border-b border-dashed border-gray-300 pb-2">
                   <div>
                     <h1 class="font-bold">Route</h1>
                   </div>
@@ -187,9 +210,10 @@
                     <h1 class="font-bold">Dhaka-Sylhet</h1>
                   </div>
                 </div>
-                <br />
+                
 
-                <div class="flex justify-between">
+
+                <div class="flex justify-between border-b border-dashed border-gray-300 py-2">
                   <div>
                     <h1 class="font-bold">Departure Time</h1>
                   </div>
@@ -199,37 +223,39 @@
                 </div>
                 <br />
 
-                <div class="flex justify-between">
-                  <div class="bg-gray-300 rounded-xl p-3">
+                <div class="md:flex justify-between">
+                  <div class="bg-gray-300 rounded-xl p-3 max-sm:mb-2">
                     <h1 class="font-bold">Boarding Point - Airport</h1>
                   </div>
 
-                  <div class="bg-gray-300 rounded-xl p-3">
+                  <div class="bg-gray-300 rounded-xl p-3 max-sm:mb-2">
                     <h1 class="font-bold">Kodomtoli</h1>
                   </div>
 
-                  <div class="bg-gray-300 rounded-xl p-3">
+                  <div class="bg-gray-300 rounded-xl p-3 max-sm:mb-2">
                     <h1 class="font-bold">Est. Time - 11Hours</h1>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="w-[30%] flex justify-center flex-col items-center">
+            <div class="md:w-[30%] flex justify-center flex-col items-center">
               <img src="images/fare.png" alt="" />
               <h1 class="text-xl font-bold">550 Taka</h1>
               <p>Per Seat</p>
             </div>
           </div>
 
-          <div class="flex gap-5 bg-white mt-10 rounded-3xl p-5">
+          <div class="md:flex gap-5 bg-white mt-10 rounded-3xl p-5">
             <!-- seat booking section -->
-            <div class="w-[60%] m-10 rounded-2xl">
+            <div
+              class="w-full md:w-[60%] md:m-10 rounded-2xl max-sm:overflow-x-scroll"
+            >
               <div>
-                <h1 class="font-bold text-xl p-3">Select Your Seat</h1>
+                <h1 class="font-bold text-xl p-3 border-b border-dashed border-gray-300">Select Your Seat</h1>
               </div>
 
-              <div class="flex justify-between m-3 px-3">
+              <div class="flex justify-between border-b border-dashed border-gray-300 pb-2 px-3 pt-2">
                 <div class="flex gap-2">
                   <div><img src="images/seat-gray.png" alt="" /></div>
                   <div>
@@ -246,25 +272,27 @@
               </div>
 
               <!-- seat number -->
-              <div class="flex justify-end">
+              <div class="flex justify-end mt-2">
                 <img src="images/steering (2).png" alt="" class="" />
               </div>
 
-
               <div class="grid grid-cols-2 gap-3 mt-5">
-                <div class="grid grid-cols-6">
-                  <div class="flex justify-start px-5 items-center">A</div>
-                  <div class="flex justify-between gap-x-8 ">
+                <div class="grid md:grid-cols-6">
+                  <div class="hidden md:flex justify-start px-5 items-center">
+                    A
+                  </div>
+                  <div class="flex justify-between md:gap-x-8">
                     <div class="flex justify-center">
                       <button
-                        id="A1" class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        id="A1"
+                        class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                       >
                         <p>A1</p>
                       </button>
                     </div>
                     <div class="flex justify-center">
                       <button
-                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                         id="A2"
                       >
                         <p>A2</p>
@@ -273,10 +301,10 @@
                   </div>
                 </div>
 
-                <div class="flex justify-end space-x-8">
+                <div class="flex md:justify-end justify-between md:space-x-8">
                   <div class="flex justify-center">
                     <button
-                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                       id="A3"
                     >
                       <p>A3</p>
@@ -284,20 +312,22 @@
                   </div>
                   <div class="flex justify-center">
                     <button
-                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                       id="A4"
                     >
                       <p>A4</p>
                     </button>
                   </div>
-
                 </div>
-                <div class="grid grid-cols-6">
-                  <div class="flex justify-start px-5 items-center">B</div>
-                  <div class="flex justify-between gap-x-8 ">
+
+                <div class="grid md:grid-cols-6">
+                  <div class="hidden md:flex justify-start px-5 items-center">
+                    B
+                  </div>
+                  <div class="flex justify-between md:gap-x-8">
                     <div class="flex justify-center">
                       <button
-                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                         id="B1"
                       >
                         <p>B1</p>
@@ -305,7 +335,7 @@
                     </div>
                     <div class="flex justify-center">
                       <button
-                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                         id="B2"
                       >
                         <p>B2</p>
@@ -314,10 +344,10 @@
                   </div>
                 </div>
 
-                <div class="flex justify-end space-x-8">
+                <div class="flex md:justify-end justify-between md:space-x-8">
                   <div class="flex justify-center">
                     <button
-                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                       id="B3"
                     >
                       <p>B3</p>
@@ -325,20 +355,21 @@
                   </div>
                   <div class="flex justify-center">
                     <button
-                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                       id="B4"
                     >
                       <p>B4</p>
                     </button>
                   </div>
-
                 </div>
-                <div class="grid grid-cols-6">
-                  <div class="flex justify-start px-5 items-center">C</div>
-                  <div class="flex justify-between gap-x-8 ">
+                <div class="grid md:grid-cols-6">
+                  <div class="hidden md:flex justify-start px-5 items-center">
+                    C
+                  </div>
+                  <div class="flex justify-between md:gap-x-8">
                     <div class="flex justify-center">
                       <button
-                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                         id="C1"
                       >
                         <p>C1</p>
@@ -346,7 +377,7 @@
                     </div>
                     <div class="flex justify-center">
                       <button
-                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                         id="C2"
                       >
                         <p>C2</p>
@@ -355,10 +386,10 @@
                   </div>
                 </div>
 
-                <div class="flex justify-end space-x-8">
+                <div class="flex md:justify-end justify-between md:space-x-8">
                   <div class="flex justify-center">
                     <button
-                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                       id="C3"
                     >
                       <p>C3</p>
@@ -366,19 +397,21 @@
                   </div>
                   <div class="flex justify-center">
                     <button
-                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                       id="C4"
                     >
                       <p>C4</p>
                     </button>
                   </div>
                 </div>
-                <div class="grid grid-cols-6">
-                  <div class="flex justify-start px-5 items-center">D</div>
-                  <div class="flex justify-between gap-x-8 ">
+                <div class="grid md:grid-cols-6">
+                  <div class="hidden md:flex justify-start px-5 items-center">
+                    D
+                  </div>
+                  <div class="flex justify-between md:gap-x-8">
                     <div class="flex justify-center">
                       <button
-                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                         id="D1"
                       >
                         <p>D1</p>
@@ -386,7 +419,7 @@
                     </div>
                     <div class="flex justify-center">
                       <button
-                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                         id="D2"
                       >
                         <p>D2</p>
@@ -395,10 +428,10 @@
                   </div>
                 </div>
 
-                <div class="flex justify-end space-x-8">
+                <div class="flex md:justify-end justify-between md:space-x-8">
                   <div class="flex justify-center">
                     <button
-                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                       id="D3"
                     >
                       <p>D3</p>
@@ -406,19 +439,21 @@
                   </div>
                   <div class="flex justify-center">
                     <button
-                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                       id="D4"
                     >
                       <p>D4</p>
                     </button>
                   </div>
                 </div>
-                <div class="grid grid-cols-6">
-                  <div class="flex justify-start px-5 items-center">E</div>
-                  <div class="flex justify-between gap-x-8 ">
+                <div class="grid md:grid-cols-6">
+                  <div class="hidden md:flex justify-start px-5 items-center">
+                    E
+                  </div>
+                  <div class="flex justify-between md:gap-x-8">
                     <div class="flex justify-center">
                       <button
-                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                         id="E1"
                       >
                         <p>E1</p>
@@ -426,7 +461,7 @@
                     </div>
                     <div class="flex justify-center">
                       <button
-                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                         id="E2"
                       >
                         <p>E2</p>
@@ -435,10 +470,10 @@
                   </div>
                 </div>
 
-                <div class="flex justify-end space-x-8">
+                <div class="flex md:justify-end justify-between md:space-x-8">
                   <div class="flex justify-center">
                     <button
-                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                       id="E3"
                     >
                       <p>E3</p>
@@ -446,19 +481,21 @@
                   </div>
                   <div class="flex justify-center">
                     <button
-                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                       id="E4"
                     >
                       <p>E4</p>
                     </button>
                   </div>
                 </div>
-                <div class="grid grid-cols-6">
-                  <div class="flex justify-start px-5 items-center">F</div>
-                  <div class="flex justify-between gap-x-8 ">
+                <div class="grid md:grid-cols-6">
+                  <div class="hidden md:flex justify-start px-5 items-center">
+                    F
+                  </div>
+                  <div class="flex justify-between md:gap-x-8">
                     <div class="flex justify-center">
                       <button
-                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                         id="F1"
                       >
                         <p>F1</p>
@@ -466,7 +503,7 @@
                     </div>
                     <div class="flex justify-center">
                       <button
-                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                         id="F2"
                       >
                         <p>F2</p>
@@ -475,10 +512,10 @@
                   </div>
                 </div>
 
-                <div class="flex justify-end space-x-8">
+                <div class="flex md:justify-end justify-between md:space-x-8">
                   <div class="flex justify-center">
                     <button
-                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                       id="F3"
                     >
                       <p>F3</p>
@@ -486,19 +523,21 @@
                   </div>
                   <div class="flex justify-center">
                     <button
-                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                       id="F4"
                     >
                       <p>F4</p>
                     </button>
                   </div>
                 </div>
-                <div class="grid grid-cols-6">
-                  <div class="flex justify-start px-5 items-center">G</div>
-                  <div class="flex justify-between gap-x-8 ">
+                <div class="grid md:grid-cols-6">
+                  <div class="hidden md:flex justify-start px-5 items-center">
+                    G
+                  </div>
+                  <div class="flex justify-between md:gap-x-8">
                     <div class="flex justify-center">
                       <button
-                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                         id="G1"
                       >
                         <p>G1</p>
@@ -506,7 +545,7 @@
                     </div>
                     <div class="flex justify-center">
                       <button
-                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                         id="G2"
                       >
                         <p>G2</p>
@@ -515,10 +554,10 @@
                   </div>
                 </div>
 
-                <div class="flex justify-end space-x-8">
+                <div class="flex md:justify-end justify-between md:space-x-8">
                   <div class="flex justify-center">
                     <button
-                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                       id="G3"
                     >
                       <p>G3</p>
@@ -526,19 +565,21 @@
                   </div>
                   <div class="flex justify-center">
                     <button
-                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                       id="G4"
                     >
                       <p>G4</p>
                     </button>
                   </div>
                 </div>
-                <div class="grid grid-cols-6">
-                  <div class="flex justify-start px-5 items-center">H</div>
-                  <div class="flex justify-between gap-x-8 ">
+                <div class="grid md:grid-cols-6">
+                  <div class="hidden md:flex justify-start px-5 items-center">
+                    H
+                  </div>
+                  <div class="flex justify-between md:gap-x-8">
                     <div class="flex justify-center">
                       <button
-                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                         id="H1"
                       >
                         <p>H1</p>
@@ -546,7 +587,7 @@
                     </div>
                     <div class="flex justify-center">
                       <button
-                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                         id="H2"
                       >
                         <p>H2</p>
@@ -555,10 +596,10 @@
                   </div>
                 </div>
 
-                <div class="flex justify-end space-x-8">
+                <div class="flex md:justify-end justify-between md:space-x-8">
                   <div class="flex justify-center">
                     <button
-                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                       id="H3"
                     >
                       <p>H3</p>
@@ -566,19 +607,21 @@
                   </div>
                   <div class="flex justify-center">
                     <button
-                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                       id="H4"
                     >
                       <p>H4</p>
                     </button>
                   </div>
                 </div>
-                <div class="grid grid-cols-6">
-                  <div class="flex justify-start px-5 items-center">I</div>
-                  <div class="flex justify-between gap-x-8 ">
+                <div class="grid md:grid-cols-6">
+                  <div class="hidden md:flex justify-start px-5 items-center">
+                    I
+                  </div>
+                  <div class="flex justify-between md:gap-x-8">
                     <div class="flex justify-center">
                       <button
-                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                         id="I1"
                       >
                         <p>I1</p>
@@ -586,7 +629,7 @@
                     </div>
                     <div class="flex justify-center">
                       <button
-                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                         id="I2"
                       >
                         <p>I2</p>
@@ -595,10 +638,10 @@
                   </div>
                 </div>
 
-                <div class="flex justify-end space-x-8">
+                <div class="flex md:justify-end justify-between md:space-x-8">
                   <div class="flex justify-center">
                     <button
-                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                       id="I3"
                     >
                       <p>I3</p>
@@ -606,19 +649,21 @@
                   </div>
                   <div class="flex justify-center">
                     <button
-                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                       id="I4"
                     >
                       <p>I4</p>
                     </button>
                   </div>
                 </div>
-                <div class="grid grid-cols-6">
-                  <div class="flex justify-start px-5 items-center">J</div>
-                  <div class="flex justify-between gap-x-8 ">
+                <div class="grid md:grid-cols-6">
+                  <div class="hidden md:flex justify-start px-5 items-center">
+                    J
+                  </div>
+                  <div class="flex justify-between md:gap-x-8">
                     <div class="flex justify-center">
                       <button
-                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                         id="J1"
                       >
                         <p>J1</p>
@@ -626,7 +671,7 @@
                     </div>
                     <div class="flex justify-center">
                       <button
-                        class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                        class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                         id="J2"
                       >
                         <p>J2</p>
@@ -635,10 +680,10 @@
                   </div>
                 </div>
 
-                <div class="flex justify-end space-x-8">
+                <div class="flex md:justify-end justify-between md:space-x-8">
                   <div class="flex justify-center">
                     <button
-                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                       id="J3"
                     >
                       <p>J3</p>
@@ -646,7 +691,7 @@
                   </div>
                   <div class="flex justify-center">
                     <button
-                      class="bg-gray-200 px-5 py-3 w-28 rounded-xl text-center"
+                      class="bg-gray-200 px-5 py-3 max-sm:max-w-28 md:w-28 rounded-xl text-center seats"
                       id="J4"
                     >
                       <p>J4</p>
@@ -657,18 +702,20 @@
             </div>
 
             <!-- ticket details -->
-            <div class="p-5 w-[40%]">
+            <div class="p-5 w-full md:w-[40%]">
               <div>
                 <h1 class="font-bold text-xl p-3">Select Your Seat</h1>
               </div>
 
               <div class="bg-gray-200 rounded-lg container mx-auto p-5">
-                <div class="flex justify-between mx-10">
+                <div class="flex justify-between md:mx-10 border-b border-dashed border-gray-300 pb-2">
                   <div>
                     <p class="font-bold">
                       Seat
-                      <span class="bg-green-500 text-white px-3 rounded-lg"
-                        >2</span
+                      <span
+                        id="seat_count"
+                        class="bg-green-500 text-white px-3 rounded-lg"
+                        >0</span
                       >
                     </p>
                   </div>
@@ -681,53 +728,44 @@
                 </div>
                 <hr />
 
-                <div class="flex justify-between mx-10">
-                  <div>
-                    <p class="font-bold">C2</p>
-                  </div>
-                  <div>
-                    <p class="font-bold">Economy</p>
-                  </div>
-                  <div>
-                    <p class="font-bold">550</p>
-                  </div>
-                </div>
-                <div class="flex justify-between mx-10">
-                  <div>
-                    <p class="font-bold">C2</p>
-                  </div>
-                  <div>
-                    <p class="font-bold">Economy</p>
-                  </div>
-                  <div>
-                    <p class="font-bold">550</p>
-                  </div>
-                </div>
+                <!-- seat details start -->
+                <div id="seat_details"></div>
+                <!-- seat details end -->
+
                 <hr />
-                <div class="flex justify-between mx-10">
+                <div class="flex justify-between md:mx-10 mb-5 border-b border-solid border-gray-300 pb-2" id="total">
                   <div>
                     <p class="font-bold">Total Price</p>
                   </div>
                   <div>
-                    <p class="font-bold">1100</p>
+                    <p class="font-bold" id="total_price">BDT 0</p>
                   </div>
                 </div>
 
-                <div class="flex shadow-md bg-white m-5 mb-10 rounded-lg p-2">
-                  <input
-                    type="text"
-                    placeholder="Have any copupon?"
-                    class="flex-1 outline-none pl-3"
-                  />
-                  <button class="btn btn-success">Apply</button>
+                <p id="discount_text" class="m-0 md:mx-10 mb-2"></p>
+
+                <div id="coupon" class="hidden">
+                  <div
+                    class="flex shadow-md bg-white m-5 mt-0 mb-10 rounded-lg p-2"
+                  >
+                    <input
+                      type="text"
+                      placeholder="Have any coupon?"
+                      class="flex-1 outline-none pl-3"
+                      id="coupon_code"
+                    />
+                    <button class="btn btn-success" id="apply_coupon_code">
+                      Apply
+                    </button>
+                  </div>
                 </div>
 
-                <div class="flex justify-between mx-10">
+                <div class="flex justify-between md:mx-10">
                   <div>
                     <p class="font-bold">Grand Total</p>
                   </div>
                   <div>
-                    <p class="font-bold">BDT 1100</p>
+                    <p class="font-bold" id="grand_total">BDT 0</p>
                   </div>
                 </div>
               </div>
@@ -753,9 +791,10 @@
                       <span class="label-text font-bold">Phone Number*</span>
                     </div>
                     <input
-                      type="text"
+                      type="tel"
                       placeholder="Enter your phone number"
                       class="input input-bordered w-full"
+                      id="phone_number"
                     />
                     <div class="label"></div>
                   </label>
@@ -773,13 +812,60 @@
                     <div class="label"></div>
                   </label>
                 </div>
-                <div><button class="btn btn-success w-full">Next</button></div>
+                <div>
+                  <button
+                    class="btn btn-success w-full"
+                    id="next_button"
+                    onclick="success_modal.showModal()"
+                    disabled
+                  >
+                    Next
+                  </button>
+                </div>
+
+                <div class="flex justify-between md:px-10 mt-5">
+                  <p class="m-0 text-[#030712]"><a href="#" class="underline">Terms and Conditions</a></p>
+                  <p class="m-0 text-[#030712]"><a href="#" class="underline">Cancellation Policy</a></p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- success modal -->
+      <dialog id="success_modal" class="modal">
+        <div class="modal-box">
+          <div class="flex items-center flex-col">
+            <img src="./images/success.png" alt="success_image" class="w-24" />
+            <h3
+              class="text-center text-xl font-semibold text-green-500 uppercase m-0 my-5"
+            >
+              Success
+            </h3>
+            <p class="text-center m-0">
+              Thank you for Booking Our Bus Seats. <br />
+              We are working hard to find the best service and deals for you.
+            </p>
+            <p class="text-center mt-2 font-light">
+              Shortly you will find a confirmation in your email.
+            </p>
+          </div>
+          <div class="modal-action flex justify-center">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button
+                class="w-[300px] rounded-full bg-green-500 text-white p-3"
+                id="modal_close_btn"
+              >
+                Continue
+              </button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </main>
+
     <script src="./utility.js"></script>
     <script src="./ticket.js"></script>
   </body>
